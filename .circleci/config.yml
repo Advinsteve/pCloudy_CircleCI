@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    name: pCloudy
+    docker:
+      - image: cimg/node:20.0.0
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run android
